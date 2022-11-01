@@ -1,8 +1,8 @@
-# KKN RECONATION
+# Digit Rocognition
 
 ## CONFIGURATION 
 
-Python version :3
+Python version : 3.11
 library : scikit-datasets numpy
 
 ```
@@ -17,4 +17,3 @@ Run the test Code :
 ```
 python DigitRecogition.py
 ```
-
