@@ -18,6 +18,11 @@ training set - 10.000 samples
 test set - 1.000 samples
 
 Here some examples :
+
+![pic_disgits_minst](mnist-digits-small.webp)
+
+
+
 Run the test Code :
 
 ```
