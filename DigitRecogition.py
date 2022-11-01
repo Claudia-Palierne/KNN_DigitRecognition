@@ -6,42 +6,9 @@ Created on Sun Oct 24 12:22:28 2021
 
 # -*- coding: utf-8 -*-
 
-###### EX 1 - INTRO TO ML ########
-
-### Part 3
-
 from functools import cache
 import numpy as np
 from matplotlib import pyplot as plt
-
-N = 200000 #rows
-n = 20 #columns
-p = 0.5
-
-mat = np.random.binomial(1,p,(N,n))
-
-mean = mat.sum(axis = 1)/n #empirical mean
-
-e = np.linspace(0,1, 50)
-prob = np.zeros(len(e))
-
-for i in range(len(e)) :
-    for j in range(len(mean)) :
-        if (abs(mean[j]-p) > e[i]) :
-            prob[i] += 1
-    prob[i] = prob[i]/N #empirical probability
-
-plt.title("Visualizing Hoeffding bound") 
-plt.xlabel("epsilon") 
-plt.ylabel("P(|X-p|>e)") 
-plt.plot(e,prob, 'b') #plot empirical probability
-plt.plot(e,2*np.exp(-2*n*e**2),'r')
-plt.show()
-
-
-
-##### Programming part 
-
 from sklearn.datasets import fetch_openml
 
 mnist = fetch_openml('mnist_784', as_frame=False)
@@ -104,7 +71,7 @@ def kNN(train_img, train_label, image, k, n) :
     dist = calcDist(train_img,image)
     #take the k closest vectors to image.
     k_idx = np.argsort(dist)[:k]
-    #Output the most probable i.e. with the most occurenc betweeen the k closest vector.
+    #Output the most probable label i.e. with the most occurence betweeen the k closest vector.
     label = getLabel(train_label, k_idx)
     return label
 
@@ -140,7 +107,7 @@ n = 1000
 #Build a grid for k :
 k_accurate = np.zeros(100)
 for i in range(1,101) :
-    k_accurate[i] = accuracy(train, train_labels, test, test_labels, i, n)
+    k_accurate[i-1] = accuracy(train, train_labels, test, test_labels, i, n)
 
 plt.title("K-NN accuracy as a function of k") 
 plt.xlabel("k") 
