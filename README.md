@@ -1,4 +1,4 @@
-# Digit Recognition for MINST Data set
+# Digit Recognition for MNIST Data set
 
 ## CONFIGURATION 
 
@@ -13,13 +13,14 @@ pip install -r requirement.txt
 The MNIST data set is a collection of 70.000 black and white handwritten digits from 0 to 9.
 The digits have been size-normalized and centered in a fixed-size image.
 
+![pic_digits_mnist](mnist-digits-small.webp)
+
 I took a subset of the data set that I split into a train and test set in the following manner :
 training set - 10.000 samples
 test set - 1.000 samples
 
-Here some examples :
+Once the splitting part done, I applied the algorithm K-Nearest Neighbors
 
-![pic_disgits_minst](mnist-digits-small.webp)
 
 
 
