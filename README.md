@@ -2,8 +2,8 @@
 
 ## CONFIGURATION 
 
-Python version : 3.11 \n
-library : scikit-datasets numpy
+Python version : 3.11  
+library : scikit-datasets numpy matplotlib
 
 ```
 pip install -r requirement.txt  
@@ -21,7 +21,9 @@ test set - 1.000 samples
 
 Once the splitting part done, I applied the algorithm K-Nearest Neighbors
 
-
+1. with fixed k and n in order to test my code.
+2. by tuning the value of the hyperparameter k to be the most efficient.
+3. how the volume of data set influence the accuracy of my predictions.
 
 
 Run the test Code :
