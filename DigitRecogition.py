@@ -125,7 +125,7 @@ k = 1
 #Build the grid for n
 n_accurate = np.zeros(50)
 for i in range(1,51) :
-    n_accurate[i] = accuracy(train, train_labels, test, test_labels, k, i*100)
+    n_accurate[i-1] = accuracy(train, train_labels, test, test_labels, k, i*100)
 
 plt.title("K-NN accuracy as a function of k") 
 plt.xlabel("k") 
