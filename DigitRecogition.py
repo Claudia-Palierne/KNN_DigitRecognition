@@ -6,7 +6,6 @@ Created on Sun Oct 24 12:22:28 2021
 
 # -*- coding: utf-8 -*-
 
-from functools import cache
 import numpy as np
 from matplotlib import pyplot as plt
 from sklearn.datasets import fetch_openml
