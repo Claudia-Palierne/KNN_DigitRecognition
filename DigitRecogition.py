@@ -115,7 +115,7 @@ plt.ylabel("accuracy of K-NN (zero-one loss)")
 plt.plot(np.arange(1,101),k_accurate) 
 plt.show()
 
-print("Discuss the result : The best value for seems to be k = 1. Indede since some numbers look alike when they are handwritten, it would not be a good idea to add variance i.e. increase k.")
+print("Discuss the result : The best value for seems to be k = 1. Indeed since some numbers look alike when they are handwritten, it would not be a good idea to add variance i.e. increase k.")
 #Different number when they are hand written number looks sometimes similar.
 #Thus the way people wrote number, might induce some errors in the labels given by our algorithm.
 #Then, if we increase the k, we might get the wrong label.

@@ -11,6 +11,7 @@ pip install -r requirement.txt
 ```
 
 ##  Description 
+
 The MNIST data set is a collection of 70.000 black and white handwritten digits from 0 to 9.
 The digits have been size-normalized and centered in a fixed-size image.
 
@@ -30,13 +31,18 @@ Once the splitting part done, I applied the algorithm K-Nearest Neighbors
 
 1. In the first execution of the code, I ran KNN with 1000 samples in my training set and k = 10. I get an accuracy of 0.846  
 
-2. For the second execution I made a grid for the hyper parameter k and kept 1000 samples in my training set. Here are the results :  
+2. For the second execution I made a grid for the hyperparameter k and kept n = 1000 samples in my training set. Here are the results :  
+
+![graph_k](Figure_1.png)
 
 We can see that k = 1 is the best match since it has the highest accuracy. This results can be explained by the fact that some numbers when they are handwritten can look alike, like 6 and 8. Thus increasing the k would add variance in a probleme where there isn't any overfit.  
 
-3. Concerning the last execution of my code, I wanted to plot a well-known effect : increasing the number of sample in the training set would only increase the accuracy.  
+3. Concerning the last execution of my code, I wanted to plot a well-known effect : how increasing the number of samples in the training set would only increase the accuracy.  
+
+![graph_n](Figure_2.png)
 
 ## Execution
+
 Run the Code here :
 ```
 python DigitRecogition.py
