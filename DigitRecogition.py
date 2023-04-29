@@ -112,7 +112,7 @@ plt.title("K-NN accuracy as a function of k")
 plt.xlabel("k") 
 plt.ylabel("accuracy of K-NN (zero-one loss)") 
 plt.plot(np.arange(1,101),k_accurate) 
-plt.savefig("Accuracy_against_k")
+plt.savefig("accuracy_against_k.png")
 
 print("Discuss the result : The best value for seems to be k = 1. Indeed since some numbers look alike when they are handwritten, it would not be a good idea to add variance i.e. increase k.")
 #Different number when they are hand written number looks sometimes similar.
@@ -130,7 +130,7 @@ plt.title("K-NN accuracy as a function of k")
 plt.xlabel("n") 
 plt.ylabel("accuracy of K-NN (zero-one loss)") 
 plt.plot(np.arange(100,5100,100),n_accurate) 
-plt.savefig("Accuracy_against_n)
+plt.savefig("accuracy_against_n.png")
 
 print("Discuss the result : We can see that when n increase, the accuracy increase as well.")
 #It seems logical. In the sens that we have more training picture then we have more chance to have close image.
